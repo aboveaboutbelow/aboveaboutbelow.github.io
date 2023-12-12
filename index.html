@@ -6,12 +6,13 @@
   <style>
     html {
       height: 100%;
-      width: 100%
+      width: 100%;
     }
 
     body {
       margin: 0;
       display: flex;
+      overflow: hidden;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -34,7 +35,7 @@
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    canvas.style.backgroundColor = '#282c34';
+    canvas.style.backgroundColor = '#000000';
 
     const margin = 0.33;
     const effectiveHeight = canvas.height * (1 - 2 * margin);
