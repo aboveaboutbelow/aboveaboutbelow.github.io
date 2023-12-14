@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>🚧 Self-Simulating 🚧</title>
+  <title>Self-Simulating 🚧</title>
   <style>
     html,
     body {
@@ -47,13 +47,14 @@
     const sideLength = effectiveHeight / (Math.sqrt(3) / 2);
 
     const startX = (canvas.width - sideLength) / 2;
-    const startY = (canvas.height / 2) + (effectiveHeight / 2);
+    const startY = (canvas.height / 2) + (effectiveHeight / (1 + Math.sqrt(3)));
 
     const vertices = [
       [startX, startY],
       [startX + sideLength / 2, startY - effectiveHeight],
       [startX + sideLength, startY]
     ];
+
 
     function getColorByDepth(depth) {
       const colors = [
